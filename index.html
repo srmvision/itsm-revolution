@@ -17,6 +17,7 @@
     </style>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/docs.css" rel="stylesheet">
+    <link href="css/ours.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -59,7 +60,7 @@
           <p class="marketing-byline">
               Le 5 avril 2012 à 10h, SRMvision vous donne rendez-vous.
             </p>
-          <p><a class="btn btn-primary btn-large">Inscrivez vous &raquo;</a></p>
+          <p><a class="btn btn-primary btn-large" data-toggle="modal" href="#webinarForm">Inscrivez vous &raquo;</a></p>
         </div>
         <div>
           <div class="row">
@@ -88,7 +89,7 @@
           
             <div class="row">
               <div class="span4">
-                <i class="bookmarking"></i>
+                <i class="icon-road" style="float:left"></i>
                 <h3>ITSM sans frontière</h3>
                  <p>
                  Les processus deviennent partagés et élaborés en commun entre clients et fournisseurs. Créez votre écosystème ITSM !
@@ -96,13 +97,13 @@
               </div>
 
               <div class="span4">
-                <i class="search"></i>
+                <i class="big icon-tpr"></i>
                 <h3>La performance mesurée</h3>
                 <p>Chaque fournisseur convient avec son client des méthodes de notation. Les résultats sont visibles par les deux acteurs.</p>
               </div>
 
               <div class="span4">
-                <i class="read"></i>    
+                <i class="big icon-initiative"></i>    
                 <h3>SRMvision Initiative</h3>
                  <p>
                     Un programme international où vous êtes un acteur de ce cercle vertueux signataire de la charte de transparence selon ITIL !
@@ -112,19 +113,19 @@
             
             <div class="row">
               <div class="span4">
-                <i class="collaborate"></i>
+                <i class="big icon-quickstart"></i>
                 <h3>Quick Start</h3>
                 <p>C’est le programme Quick Start qui après qualification valide une implémentation efficace, structurée et rapide.</p>
               </div>
 
               <div class="span4">
-                <i class="collaborate"></i>
+                <i class="big icon-mgm"></i>
                 <h3>SRMvision MGM</h3>
                 <p>MGM, un programme révolutionnaire qui vous permet de bénéficier de l’offre exceptionnelle de SRMvision et réduire votre abonnement à 0 euro pour un an !</p>
               </div>
 
               <div class="span4">
-                <i class="collaborate"></i>
+                <i class="big icon-network"></i>
                 <h3>SRMvision Network</h3>
                 <p>Un réseau de partenaires certifiés et mesurés par le TPR (Total Performance of Relationship)</p>
               </div>
@@ -178,6 +179,32 @@
       </footer>
 
     </div> <!-- /container -->
+
+
+    <div class="modal fade" id="webinarForm">
+      <div class="modal-header">
+        <a class="close" data-dismiss="modal">×</a>
+        <h3>Inscription au webinar</h3>
+      </div>
+      <form style="margin-bottom:0" name='webinar'>
+      <div class="modal-body">
+        <label for="company">Société</label>
+        <input name="company" type="text"/>
+        <label for="name">Nom</label>
+        <input name="name" type="text"/>
+        <label for="title">Fonction</label>
+        <input name="title" type="text"/>
+        <label for="email">Adresse électronique</label>
+        <input name="email" type="text"/>
+        <label for="phone">Numéro de téléphone</label>
+        <input name="phone" type="text"/>
+      </div>
+      <div class="modal-footer">
+        <a href="#" data-dismiss="modal" class="btn">Fermer</a>
+        <a href="#" onclick="webinar.submit();" data-dismiss="modal" class="btn btn-primary">Save changes</a>
+      </div>
+      </form>
+    </div>
 
     <!-- Le javascript
     ================================================== -->

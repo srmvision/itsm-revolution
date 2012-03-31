@@ -1,0 +1,26 @@
+i.icon-tpr{
+  background-image: url("../img/tpr.png");
+}
+
+i.icon-mgm{
+  background-image: url("../img/mgm.png");	
+}
+
+i.icon-initiative{
+	background-image: url("../img/initiative.png");
+}
+
+i.icon-quickstart{
+	background-image: url("../img/quickstart.png");
+}
+
+i.icon-network{
+	background-image: url("../img/network.png");
+}
+
+i.big{
+	width:48px;
+	height:48px;
+	background-position:0 0;
+	display: inline-block;
+}
