@@ -5,7 +5,7 @@
     <title>ITSM-Revolution</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="cgatay">
 
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -16,20 +16,21 @@
       }
     </style>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <!-- Le fav and touch icons -->
+    <!-- Le fav and touch icons 
     <link rel="shortcut icon" href="ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png"> -->
   </head>
 
-  <body>
+  <body data-spy="scroll">
 
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
@@ -39,12 +40,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">ITSM-Revolution</a>
+          <a class="brand" href="#">SRMvision</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">À propos</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li class="active"><a href="#webinar">Webinar</a></li>
+              <li><a href="#features">Caractéristiques</a></li>
+              <li><a href="#testimonials">Témoignages</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -52,64 +53,128 @@
     </div>
 
     <div class="container">
-
       <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit">
-        
-        <div class="row">
-          <div class="span4">
-            <h1>Découvrez SRMvision!</h1>
-          </div>
-          <div class="span4"></div>
-          <div class="span4"></div>
-          <div class="span4">
-            <object type="text/html" data="http://www.youtube.com/embed/ytZEXuWxaSU" style="width:640px;height:360px;"></object>
-          </div>
+        <div class="jumbotron masthead" id="webinar">
+          <h1>Découvrez SRMvision!</h1>
+          <p class="marketing-byline">
+              Le 5 avril 2012 à 10h, SRMvision vous donne rendez-vous.
+            </p>
+          <p><a class="btn btn-primary btn-large">Inscrivez vous &raquo;</a></p>
         </div>
-        <p><a class="btn btn-primary btn-large">Inscrivez vous &raquo;</a></p>
-      </div>
-
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="span4">
-          <h2>Ce qu'ils en disent</h2>
+        <div>
+          <div class="row">
+          <div class="span5" style="padding-top:45px">
+            <h2>Pourquoi SRMvision ?</h2>
+            <p>Aujourd'hui plus que jamais, beaucoup de questions se posent autour des processus et de la jonction avec vos fournisseurs. Les frontières se modifient, les processus et les moyens de mesure sont figés :
             <ul>
-              <li>
-                  J’ai pu aligner la satisfaction de mes utilisateurs métier et le pilotage des services de mon infogérant<br/>
-                  <span>Philippe Lemince, DSI Mairie de Boulogne Billancourt</span>
-              </li>
-              
-              <li>
-                  Des processus partagés avec mes prestataires de services stratégiques, c'est un gain de productivité très important !<br/>
-                  <span> Raphael Viard, RSSI Alstom</span>
-              </li>
-              <li>
-                  C’est une véritable innovation pour nos clients revendeurs et une différentiation majeure pour Magirus<br/>
-                  <span> Nicolas Dissaux, DG Magirus</span>
-              </li>
-              <li>
-                  SRMvision c’est l’équilibrage de la relation client / fournisseur, le tiers de confiance d’ITIL
-                  <br/><span> Yves Soronellas, comité itSMF et DSI</span>
-              </li>         
+              <li>Comment obtenir la mesure objective de la performance de mes prestataires, aligner leurs engagements sur ceux qui me sont imposés ?</li>
+              <li>Comment réduire mes coûts grâce à l’amélioration continue des relations avec les fournisseurs ?</li>
+              <li>Comment faire évoluer la relation client/prestataires vers un partenariat à long terme ?</li>
+              <li>Quelle démarche pour l’industrialisation et la transformation de la stratégie IT avec les partenaires ?</li>
             </ul>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+            </p>
+          </div>
+          <div class="span7" >
+            <object type="text/html" data="http://www.youtube.com/embed/ytZEXuWxaSU" style="width:640px;height:360px;"></object>
+            <!--YOUTUBE VIDEO-->
+          </div>
         </div>
-        <div class="span4">
-          <h2>Webinar</h2>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-       </div>
-        <div class="span4">
-          <h2>Points clefs</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div>
+
+      <hr class="soften"/>
+      <div class="marketing" id="features">
+            <h1>Alignez vos processus métier !</h1>
+            <p class="marketing-byline">IT governance only makes sense across your ecosystem</p>
+          
+            <div class="row">
+              <div class="span4">
+                <i class="bookmarking"></i>
+                <h3>ITSM sans frontière</h3>
+                 <p>
+                 Les processus deviennent partagés et élaborés en commun entre clients et fournisseurs. Créez votre écosystème ITSM !
+                 </p>
+              </div>
+
+              <div class="span4">
+                <i class="search"></i>
+                <h3>La performance mesurée</h3>
+                <p>Chaque fournisseur convient avec son client des méthodes de notation. Les résultats sont visibles par les deux acteurs.</p>
+              </div>
+
+              <div class="span4">
+                <i class="read"></i>    
+                <h3>SRMvision Initiative</h3>
+                 <p>
+                    Un programme international où vous êtes un acteur de ce cercle vertueux signataire de la charte de transparence selon ITIL !
+                 </p>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="span4">
+                <i class="collaborate"></i>
+                <h3>Quick Start</h3>
+                <p>C’est le programme Quick Start qui après qualification valide une implémentation efficace, structurée et rapide.</p>
+              </div>
+
+              <div class="span4">
+                <i class="collaborate"></i>
+                <h3>SRMvision MGM</h3>
+                <p>MGM, un programme révolutionnaire qui vous permet de bénéficier de l’offre exceptionnelle de SRMvision et réduire votre abonnement à 0 euro pour un an !</p>
+              </div>
+
+              <div class="span4">
+                <i class="collaborate"></i>
+                <h3>SRMvision Network</h3>
+                <p>Un réseau de partenaires certifiés et mesurés par le TPR (Total Performance of Relationship)</p>
+              </div>
+            </div>
+        <div class="follow-buttons">
         </div>
       </div>
 
-      <hr>
+
+      <hr class="soften"/>
+      <div class="marketing" id="testimonials">
+        <h1>Ce qu'ils en disent</h1>
+        <p class="marketing-byline">Parce que leurs avis valent tous nos longs discours !</p>
+        <div class="row">
+          <div class="span3">
+              <blockquote>
+              <span>J’ai pu aligner la satisfaction de mes utilisateurs métier et le pilotage des services de mon infogérant</span>
+              <small>Philippe Lemince, DSI Mairie de Boulogne Billancourt</small>
+              </blockquote>
+
+          </div>
+          
+          <div class="span3">
+              <blockquote>
+                  <span>Des processus partagés avec mes prestataires de services stratégiques, c'est un gain de productivité très important !</span>
+                  <small>Raphael Viard, RSSI Alstom</small>
+              </blockquote>
+          </div>
+          
+          <div class="span3">
+              <blockquote>
+                  <span>C’est une véritable innovation pour nos clients revendeurs et une différentiation majeure pour Magirus</span>
+                  <small>Nicolas Dissaux, DG Magirus</small>
+              </blockquote>
+          </div>  
+
+          <div class="span3">
+              <blockquote>
+                  <span>SRMvision c’est l’équilibrage de la relation client / fournisseur, le tiers de confiance d’ITIL</span>
+                  <small>Yves Soronellas, comité itSMF et DSI</small>
+              </blockquote>
+          </div>    
+        </div>          
+      </div>
+
+      <hr class="soften">
 
       <footer>
-        <p>&copy; SRMvision 2012</p>
+        <p>&copy; <a href="http://www.srmvision.com">SRMvision</a> 2012</p>
+        <p>Made with <a href="http://twitter.github.com/bootstrap">Twitter Bootstrap</a></p>
       </footer>
 
     </div> <!-- /container -->
@@ -117,19 +182,7 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap-transition.js"></script>
-    <script src="js/bootstrap-alert.js"></script>
-    <script src="js/bootstrap-modal.js"></script>
-    <script src="js/bootstrap-dropdown.js"></script>
-    <script src="js/bootstrap-scrollspy.js"></script>
-    <script src="js/bootstrap-tab.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <script src="js/bootstrap-popover.js"></script>
-    <script src="js/bootstrap-button.js"></script>
-    <script src="js/bootstrap-collapse.js"></script>
-    <script src="js/bootstrap-carousel.js"></script>
-    <script src="js/bootstrap-typeahead.js"></script>
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
   </body>
 </html>
