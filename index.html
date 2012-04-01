@@ -12,7 +12,6 @@
     <style type="text/css">
       body {
         padding-top: 60px;
-        padding-bottom: 40px;
       }
     </style>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
@@ -172,13 +171,35 @@
       </div>
 
       <hr class="soften">
-
-      <footer>
-        <p>&copy; <a href="http://www.srmvision.com">SRMvision</a> 2012</p>
-        <p>Made with <a href="http://twitter.github.com/bootstrap">Twitter Bootstrap</a></p>
-      </footer>
-
     </div> <!-- /container -->
+
+    <footer>
+        <div class="dark row">
+          
+              <div class="span4">
+                <h3>Coordonnées</h3>
+                <p class="address">136 avenue Joseph Kessel<br/>
+                   78190 Voisins le Bretonneux<br/>
+                   France</p>
+                <p class="phone">+33 139 300 340</p>
+                <p class="mail"><span id="mailContact" ></span></p>
+              </div>
+              <div class="span3">
+                <h3>Société</h3>
+                <p style="position:relative;"><a id="follow-button" target="_blank" class="btn" title="Suivez @srmvision sur Twitter" href="https://twitter.com/intent/follow?original_referer=http:%3A%2F%2Fitsm-revolution.com%2F&amp;region=follow_link&amp;screen_name=srmvision&amp;source=followbutton&amp;variant=2.0"><i></i><span>Suivre <b>@srmvision</b></span></a></p>
+                <p>Facebook</p>
+                <p><a href="http://www.srmvision.com">Site</a></p>
+              </div>
+            <div class="span3">
+              <h3>Newsletter</h3>
+              <p>Inscrivez vous</p>
+            </div>
+          <div class="span2 notes">
+            <p>&copy; <a href="http://www.srmvision.com">SRMvision</a> 2012<br/>
+            Made with <a href="http://twitter.github.com/bootstrap">Twitter Bootstrap</a></p>
+          </div>
+        </div>
+    </footer>
 
 
     <div class="modal fade" id="webinarForm" style="display:none">
@@ -188,16 +209,32 @@
       </div>
       <form style="margin-bottom:0" name='webinar'>
       <div class="modal-body">
-        <label for="company">Société</label>
-        <input name="company" type="text"/>
+        <div class="span3">
+          <h3>Vos informations</h3>
+        <p><label for="company">Société</label>
+        <input id='company' name="company" type="text"/>
         <label for="name">Nom</label>
-        <input name="name" type="text"/>
+        <input id='name' name="name" type="text"/>
         <label for="title">Fonction</label>
-        <input name="title" type="text"/>
+        <input id='title' name="title" type="text"/>
         <label for="email">Adresse électronique</label>
-        <input name="email" type="text"/>
+        <input id='email' name="email" type="text"/>
         <label for="phone">Numéro de téléphone</label>
-        <input name="phone" type="text"/>
+        <input id='phone' name="phone" type="text"/></p>
+        </div>
+        <div class="span2">
+          <h3>Programme</h3>
+          <p>
+          <ul class="thumb">
+                <li>Introduction</li>
+                <li>La gouvernance ITSM</li>
+                <li>Démonstration de la solution</li>
+                <li>Le programme SRMvision Initiative</li>
+                <li>Conclusion</li>
+                <li>Questions / Réponses</li>
+          </ul>
+          </p>
+        </div>
       </div>
       <div class="modal-footer">
         <a href="#" data-dismiss="modal" class="btn">Fermer</a>
@@ -211,5 +248,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/ours.js"></script>
   </body>
 </html>
